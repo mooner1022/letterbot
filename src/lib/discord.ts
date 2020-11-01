@@ -31,12 +31,12 @@ export default async({ weather, news, date, url }: discordArgs) => {
         inline: true
       },
       {
-        name: '🏞️ 날씨 / 부산',
+        name: '🏞️ 날씨 / 서울',
         value: weather.weather,
         inline: true
       },
       {
-        name: '🌡 온도 / 부산',
+        name: '🌡 온도 / 서울',
         value: weather.temp,
         inline: true
       }
