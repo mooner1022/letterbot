@@ -17,13 +17,12 @@ export default async({ weather, news, date, url }: discordArgs) => {
   let message: any = {
     username: '편지봇',
     avatar_url: 'https://cdn.discordapp.com/attachments/683175932873539589/689459371151065088/message-3592640_1280.jpg',
-    
     content:  `📨 ${today} 편지가 왔어요!`,
-
     embeds: [],
   };
 
   message.embeds.push({
+    color: 0x928BFF,
     fields: [
       {
         name: '📅 날짜 / 한국',
@@ -48,6 +47,7 @@ export default async({ weather, news, date, url }: discordArgs) => {
   });
 
   message.embeds.push({
+    color: 0x928BFF,
     title: '📰 뉴스 / 구글',
     description: news
   });
